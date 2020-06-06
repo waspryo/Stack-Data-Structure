@@ -30,6 +30,16 @@ class Stack {
     console.log(this.count == 0 ? 'Stack is empty' : 'Stack is not empty');
     return this.count == 0
   }
+
+  // Print element in stack
+  print() {
+    let str = ''
+    for( let i = 0; i < this.count; i++ ) {
+      str += this.items + ''
+      console.log(this.items[i]);
+    }
+    return str
+  }
 }
 
 const stack = new Stack()
@@ -44,4 +54,5 @@ stack.push(400)
 stack.pop()
 stack.pop()
 stack.pop()
+stack.print()
 stack.pop()
