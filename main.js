@@ -12,7 +12,14 @@ class Stack {
     let deleteItem = this.items[this.count -1]
     this.count -= 1
     console.log(`${deleteItem} removed`);
-    return deleteItem
+    return deleteItem}
+  push(e) {
+    this.items[this.count] = e
+    console.log(`${e} added to ${this.count}`);
+    this.count += 1
+    console.log(this.count);
+    console.log(this.count - 1);
+    return this.count -1
   }
 }
 
