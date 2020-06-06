@@ -45,6 +45,13 @@ class Stack {
     console.log(`${this.count} element in size`);
     return this.count
   }
+  // Clrear stack
+  clear() {
+    this.count = []
+    this.count = 0
+    console.log('Stack cleared..');
+    return this.items
+  }
 }
 
 const stack = new Stack()
@@ -65,3 +72,4 @@ stack.pop()
 
 stack.size()
 stack.isEmpty()
+stack.clear()
