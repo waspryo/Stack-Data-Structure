@@ -27,14 +27,20 @@ class Stack {
   }
   // Check if stack is empty
   isEmpty() {
-    console.log(this.count == 0 ? 'Stack is empty' : 'Stack is not empty');
+    // console.log(this.count == 0 ? 'Stack is empty' : 'Stack is not empty');
     return this.count == 0
+  }
+  // Check size of stack
+  size() {
+    console.log(`${this.count} element in size`);
+    return this.count
   }
 }
 
 const stack = new Stack()
 
 stack.isEmpty()
+
 stack.push(100)
 stack.push(200)
 stack.peek()
@@ -44,4 +50,6 @@ stack.push(400)
 stack.pop()
 stack.pop()
 stack.pop()
-stack.pop()
+
+stack.size()
+stack.isEmpty()
