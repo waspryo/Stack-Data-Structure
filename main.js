@@ -4,7 +4,7 @@ class Stack {
     this.count = 0
   }
   // Add element to top of stack
-
+ 
   // return and remove top element in stack
   push(e) {
     this.items[this.count] = e
